@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PeriDya – Rechtliche Informationen</title>
+  <style>
+    :root {
+      --bg: #f6f8fa;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #0f766e;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+    .hero, .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+    }
+    .hero { margin-bottom: 20px; }
+    h1, h2 { margin-top: 0; }
+    h1 { color: var(--accent); }
+    p { margin: 0 0 12px; }
+    .muted { color: var(--muted); }
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    a.cardlink {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+    }
+    a.cardlink:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    .title {
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>PeriDya – Rechtliche Informationen</h1>
+      <p>Auf dieser Seite finden Sie die rechtlichen Informationen zur App <strong>PeriDya</strong>.</p>
+      <p class="muted">Bitte verwenden Sie für App Store Connect insbesondere die Seite <strong>privacy.html</strong> als Privacy Policy URL.</p>
+    </div>
+
+    <div class="grid">
+      <a class="cardlink" href="privacy.html">
+        <div class="title">Datenschutzerklärung</div>
+        <div>Informationen zur Verarbeitung personenbezogener Daten und Gesundheitsdaten.</div>
+      </a>
+
+      <a class="cardlink" href="impressum.html">
+        <div class="title">Impressum</div>
+        <div>Angaben gemäß § 5 TMG und Kontaktinformationen.</div>
+      </a>
+
+      <a class="cardlink" href="medical.html">
+        <div class="title">Medizinischer Hinweis</div>
+        <div>Wichtiger Haftungs- und Nutzungshinweis für die App.</div>
+      </a>
+
+      <a class="cardlink" href="terms.html">
+        <div class="title">Nutzungsbedingungen</div>
+        <div>Grundlagen zur Nutzung von PeriDya und Premium-Funktionen.</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
